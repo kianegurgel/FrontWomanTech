@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomanTech - Conquiste seu futuro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div>  
+            <img src="imagens/logomenor.png" alt="Imagem Exemplo" id="mover-image">
+        </div>
+        <div class="header-content">
+            <div class="buttons">
+                <button class="botao" onclick="window.location.href='workshop.html'">Workshop</button>
+                <button class="botao" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                <button class="botao" onclick="window.location.href='vagas.html'">Vagas</button>
+                <button class="botao" onclick="window.location.href='feedbacks.html'">Feedbacks</button>
+                <button class="botao" onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                <button class="botao" onclick="window.location.href='curriculo.html'">Curriculo</button>
+                <button class="botao" onclick="window.location.href='pagina1.html'">Sobre</button>
+            </div>
+        </div>
+        <div class="user-info">
+            <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+            <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="timeline">
+            <h2>Nosso maior Orgulho</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">Março 2024</div>
+                    <div class="timeline-comment">
+                        <p>"O WomanTech me ajudou a me conectar com uma rede incrível de profissionais e, com as mentorias que participei, consegui minha vaga como desenvolvedora de software. Uma oportunidade única que mudou minha vida!"</p>
+                        <p class="author">- Juliana Silva, Desenvolvedora</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Fevereiro 2024</div>
+                    <div class="timeline-comment">
+                        <p>"Após completar o curso de especialização em Front-end com o WomanTech, fui indicada para uma vaga na empresa dos meus sonhos. Agora, trabalho como Front-end Developer e sou grata a todas as oportunidades que essa plataforma proporcionou!"</p>
+                        <p class="author">- Maria Oliveira, Front-end Developer</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Janeiro 2024</div>
+                    <div class="timeline-comment">
+                        <p>"Eu sempre quis trabalhar na área de tecnologia, mas achava que era impossível sendo mulher. O WomanTech me deu o suporte que eu precisava, com cursos e workshops específicos para mulheres, e hoje sou analista de dados em uma grande empresa."</p>
+                        <p class="author">- Ana Souza, Analista de Dados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Comentário do Usuário -->
+        <section class="user-comment-section">
+            <h3>Deixe seu comentário</h3>
+            <form id="commentForm">
+                <label for="user-name">Seu Nome:</label>
+                <input type="text" id="user-name" name="user-name" required placeholder="Digite seu nome">
+
+                <label for="user-comment">Seu Comentário:</label>
+                <textarea id="user-comment" name="user-comment" rows="4" required placeholder="Escreva seu comentário aqui"></textarea>
+
+                <button type="submit">Enviar Comentário</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 WomanTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

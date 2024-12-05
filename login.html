@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Woman Tech</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com botões de navegação -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Woman Tech</h1>
+                </div>
+
+                <div>  
+                    <img src="imagens/logo-womantech.png" alt="Imagem Exemplo" id="mover-image">
+                </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <section class="form-section">
+                <h2>Login</h2>
+                <!-- Agora o formulário não tem action ou método, pois o envio será feito via JavaScript -->
+                <form id="formLogin">
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Confirmar</button>
+                    </div>
+                    <div class="cadastrado">
+                        <button type="button" class="login" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Incluindo o arquivo JavaScript -->
+    <script src="login.js"></script>
+</body>
+</html>

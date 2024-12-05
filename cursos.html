@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Woman Tech - Cursos e Especializações</title>
+    <script src="cursos.js"></script>
+    <link rel="stylesheet" href="cursos.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <div>  
+                <img src="imagens/logomenor.png" alt="Logo WomanTech" id="movable-image">
+            </div>
+            <div class="header-content">
+
+                <div class="buttons">                   
+                    <button class="botao" onclick="window.location.href='workshop.html'">Workshop</button>
+                    <button class="botao" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                    <button class="botao" onclick="window.location.href='vagas.html'">Vagas</button>
+                    <button class="botao" onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                    <button class="botao" onclick="window.location.href='curriculo.html'">Curriculo</button>
+                    <button class="botao" onclick="window.location.href='pagina1.html'">Sobre</button>
+                </div>
+            </div>
+
+            <div class="user-info">
+                <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+                <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <!-- Seção Introdução -->
+            <section class="intro">
+                <h2>Cursos e Especializações</h2>
+                <p>Explore as principais linguagens de programação, análise de dados e inteligência artificial, com cursos direcionados para mulheres na tecnologia.</p>
+            </section>
+
+            <!-- Seção de Cursos -->
+            <section class="courses">
+                <!-- Card de Curso -->
+                <div class="course-card">
+                    <h3>Cursos de Programação</h3>
+                    <p>Aprenda linguagens como Python, Java, PHP e muito mais com conteúdos práticos e direcionados ao mercado de tecnologia.</p>
+                    <div class="rating">★★★★★</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-programacao'">Saiba Mais</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>Especialização em Análise de Dados</h3>
+                    <p>Aprofunde-se em ferramentas e técnicas de análise de dados, como SQL, Excel e Power BI. Prepare-se para o futuro!</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-analise-de-dados'">Saiba Mais</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>Inteligência Artificial e Machine Learning</h3>
+                    <p>Descubra o mundo da inteligência artificial com cursos sobre deep learning, redes neurais, e mais. Desafie-se e crie soluções inovadoras!</p>
+                    <div class="rating">★★★★★</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-inteligencia-artificial'">Saiba Mais</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>Curso de Frontend Web Development</h3>
+                    <p>Domine as principais tecnologias para criar sites e aplicações web com HTML, CSS, JavaScript e frameworks modernos.</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-front-end'">Saiba Mais</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>Gestão de Projetos Ágeis</h3>
+                    <p>Aprenda as metodologias ágeis para liderar projetos de tecnologia com eficácia. Torne-se uma especialista em Scrum, Kanban e mais!</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-gerenciamento-de-projetos'">Saiba Mais</button>
+                </div>
+
+                <!-- Mais Cursos -->
+                <div class="course-card">
+                    <h3>Desenvolvimento de Apps Mobile</h3>
+                    <p>Crie aplicativos móveis incríveis para Android e iOS utilizando as melhores práticas de desenvolvimento.</p>
+                    <div class="rating">★★★★★</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-apps'">Saiba Mais</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>Data Science com Python</h3>
+                    <p>Aprofunde-se no uso de Python para análise de dados, estatísticas e modelagem preditiva.</p>
+                    <div class="rating">★★★★★</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-data-science-python'">Saiba Mais</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Aprenda os princípios do design de interfaces e a experiência do usuário, criando projetos que encantam os clientes.</p>
+                    <div class="rating">★★★★☆</div>
+                    <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br/cursos-online-ux-ui'">Saiba Mais</button>
+                </div>
+
+            </section>
+
+            <!-- Seção Criativa - Incentivo ao Aprendizado -->
+            <section class="creative">
+                <h3>Seja a Protagonista da Sua Carreira</h3>
+                <p>Em um mundo digital em constante evolução, a tecnologia é a chave para um futuro promissor. Não perca a chance de aprimorar suas habilidades e alcançar novos horizontes! Explore mais cursos e transforme sua carreira com a WomanTech.</p>
+                <button class="apply-btn" onclick="window.location.href='https://www.alura.com.br'">Explore Mais Cursos na Alura</button>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Função para exibir uma mensagem ao enviar o formulário
+        function enviarFormulario() {
+            alert("Inscrição enviada com sucesso!");
+        }
+    </script>
+</body>
+</html>

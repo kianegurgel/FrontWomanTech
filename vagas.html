@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomanTech - Vagas</title>
+    <script src="vagas.js"></script>
+    <link rel="stylesheet" href="vagas.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div>  
+            <img src="imagens/logomenor.png" alt="Imagem Exemplo" id="mover-image">
+        </div>
+        <div class="header-content">
+            <div class="buttons">               
+                <button class="botao 2" onclick="window.location.href='workshop.html'">Workshop</button>
+                <button class="botao 4" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                <button class="botao 4" onclick="window.location.href='vagas.html'">Vagas</button>
+                <button class="botao 4" onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                <button class="botao 4" onclick="window.location.href='curriculo.html'">Curriculo</button>
+                <button class="botao 1" onclick="window.location.href='pagina1.html'">Sobre</button>
+            </div>
+        </div>
+        <div class="user-info">
+            <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+            <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+        </div>
+    </header>
+
+    <!-- Mensagem de Parceria WomanTech -->
+    <section class="partnership-message">
+        <p class="partnership-text">
+            A WomanTech está constantemente fechando parcerias com empresas para trazer oportunidades exclusivas para mulheres na tecnologia! 
+            As vagas Abaixo já foram frutos dessas parcerias! Junte-se a nós e se candidate a vagas com prioridade para o nosso programa. 
+            <span class="emoji">💼🌟</span>
+        </p>
+    </section>
+
+    <!-- Lista de Vagas -->
+    <section class="job-list">
+        <!-- Vaga 1 -->
+        <div class="job-item">
+            <h3>Engenheiro de Dados Especialista</h3>
+            <p>Contratação PJ, salário compatível com o mercado<br>Vaga híbrida <br> <span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Engenheiro de Dados Especialista')">Candidatar-se</button>
+        </div>
+        
+        <!-- Vaga 2 -->
+        <div class="job-item">
+            <h3>Cloud DevOps Engineer</h3>
+            <p>R$ 5.000 mais benefícios<br>Vaga presencial <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Cloud DevOps Engineer')">Candidatar-se</button>
+        </div>
+        
+        <!-- Vaga 3 -->
+        <div class="job-item">
+            <h3>Pessoa Engenheira de Dados</h3>
+            <p>Salário compatível com o mercado mais benefícios CLT<br>Vaga remota <br> <span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Pessoa Engenheira de Dados')">Candidatar-se</button>
+        </div>
+        
+        <!-- Vaga 4 -->
+        <div class="job-item">
+            <h3>Analista Jr BI</h3>
+            <p>Salário R$ 3.000 mais benefícios<br>Presencial <br> <span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Analista Jr BI')">Candidatar-se</button>
+        </div>
+        
+        <!-- Vaga 5 -->
+        <div class="job-item">
+            <h3>Estágio Machine Learning Engineer</h3>
+            <p>Salário R$ 1.800<br>Presencial <br> <span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Estágio Machine Learning Engineer')">Candidatar-se</button>
+        </div>
+
+        <!-- Novas Vagas -->
+        <div class="job-item">
+            <h3>Full Stack Developer</h3>
+            <p>Salário R$ 7.500 + benefícios<br>Vaga remota <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Full Stack Developer')">Candidatar-se</button>
+        </div>
+        
+        <div class="job-item">
+            <h3>Data Scientist</h3>
+            <p>Salário R$ 8.000 + benefícios<br>Vaga híbrida <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Data Scientist')">Candidatar-se</button>
+        </div>
+        
+        <div class="job-item">
+            <h3>Product Manager</h3>
+            <p>Salário R$ 10.000 + benefícios<br>Vaga remota <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Product Manager')">Candidatar-se</button>
+        </div>
+
+        <div class="job-item">
+            <h3>UX/UI Designer</h3>
+            <p>Salário R$ 5.500 + benefícios<br>Vaga híbrida <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('UX/UI Designer')">Candidatar-se</button>
+        </div>
+
+        <div class="job-item">
+            <h3>Software Engineer</h3>
+            <p>Salário R$ 6.000 + benefícios<br>Vaga presencial <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Software Engineer')">Candidatar-se</button>
+        </div>
+
+        <div class="job-item">
+            <h3>Front-End Developer</h3>
+            <p>Salário R$ 4.000 + benefícios<br>Vaga remota <br><span class="verificado">Vaga com prioridade para Programa WomanTech ✔️</span></p>
+            <!-- Botão para se candidatar -->
+            <button class="candidatar-btn" onclick="candidatar('Front-End Developer')">Candidatar-se</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

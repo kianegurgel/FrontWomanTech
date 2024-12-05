@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomanTech - Desenvolvedores</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="pagina1.css">
+    <!-- Link para fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com logo -->
+    <header>
+ 
+        <div class="header-content">
+            <div>  
+                <img src="imagens/logomenor.png" alt="Imagem Exemplo" id="mover-image">
+            </div>
+            <div class="buttons">
+                <button class="botao 2" onclick="window.location.href='workshop.html'">Workshop</button>
+                <button class="botao 4" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                <button class="botao 4" onclick="window.location.href='vagas.html'">Vagas</button>
+                <button class="botao 4" onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                <button class="botao 4" onclick="window.location.href='curriculo.html'">Curriculo</button>
+                <button class="botao 1" onclick="window.location.href='pagina1.html'">Sobre</button>
+            </div>
+            <div> 
+            <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+            <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Seção de conteúdo principal -->
+    <main>
+        <!-- Seção sobre o projeto -->
+        <section class="about">
+            <h2>De onde surgiu a WomanTech</h2>
+            <p><img src="imagens/mulheres1.jpeg" alt="Imagem do projeto"> WomanTech surgiu através de uma ideia inovadora voltada para a capacitação e empregabilidade de mulheres no setor de tecnologia. </p>
+        </section>
+
+        <!-- Seção do objetivo do projeto -->
+        <section class="about2">
+            <h2>Qual o objetivo do projeto</h2>
+            <p><img src="imagens/Objetivo-imagem.jpeg" alt="Objetivo do projeto"> O projeto visa reduzir a desigualdade de gênero neste campo, oferecendo um ambiente acessível e enriquecedor para mulheres que desejam entrar ou avançar na carreira tecnológica. </p>
+        </section>
+
+        <!-- Seção do carrossel de desenvolvedores -->
+        <section class="carousel-container">
+            <h2>Desenvolvedores</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="imagens/Kiane-foto.jpg" alt="Kiane Maria">
+                    <h3>Kiane Maria</h3>
+                    <p>Idade: 25</p>
+                    <p>Cursando: Análise e Desenvolvimento de Sistemas</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/lucas-imagem.jpg" alt="Lucas Henrique">
+                    <h3>Lucas Henrique</h3>
+                    <p>Idade: 21</p>
+                    <p>Cursando: Análise e Desenvolvimento de Sistemas</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/heverton-imagem.jpg" alt="Heverton Monteiro">
+                    <h3>Heverton Monteiro</h3>
+                    <p>Idade: 24</p>
+                    <p>Cursando: Análise e Desenvolvimento de Sistemas</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/igor-imagem.jpg" alt="Igor Oliveira">
+                    <h3>Igor Oliveira</h3>
+                    <p>Idade: 25</p>
+                    <p>Cursando: Análise e Desenvolvimento de Sistemas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

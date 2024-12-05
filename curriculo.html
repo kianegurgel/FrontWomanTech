@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="curriculo.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div>  
+            <img src="imagens/logomenor.png" alt="Imagem Exemplo" id="mover-image">
+        </div>
+        <div class="header-content">
+            <div class="buttons">               
+                <button class="botao" onclick="window.location.href='workshop.html'">Workshop</button>
+                <button class="botao 4" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                <button class="botao" onclick="window.location.href='vagas.html'">Vagas</button>
+                <button class="botao" onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                <button class="botao" onclick="window.location.href='curriculo.html'">Curriculo</button>
+                <button class="botao" onclick="window.location.href='pagina1.html'">Sobre</button>
+            </div>
+        </div>
+        <div class="user-info">
+            <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+            <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+        </div>
+    </header>
+
+    <!-- Exibição do Currículo -->
+    <main>
+        <section class="curriculo-container">
+            <h2>Meu Currículo</h2>
+            <div id="curriculo">
+                <p><strong>Nome:</strong> <span id="nome"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Idade:</strong> <span id="idade"></span></p>
+                <p><strong>Sexo:</strong> <span id="sexo"></span></p>
+                <p><strong>Telefone:</strong> <span id="telefone"></span></p>
+                <p><strong>CPF:</strong> <span id="cpf"></span></p>
+                <p><strong>Área de Atuação:</strong> <span id="area"></span></p>
+                <p><strong>Formação:</strong> <span id="formacao"></span></p>
+                <p><strong>Pretenção Salarial:</strong> <span id="salario"></span></p>
+                <p><strong>Trabalho Atual:</strong> <span id="trabalho"></span></p>
+            </div>
+        </section>
+    </main>
+    <script src="curriculo.js"></script> <!-- Pode ajustar ou criar um novo arquivo JS para salvar as informações -->
+</body>
+</html>

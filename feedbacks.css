@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #26a3b1;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+header img {
+    max-height: 50px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    background-color: #00a5b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #007d8a;
+}
+
+.botao {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #00a5b8;
+    color: rgb(255, 255, 255);
+}
+#logout-btn {
+    background-color: #f3bfb9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#movable-text {
+    font-size: 24px;
+    position: absolute;
+    top: 40px;
+    right: 1350px;
+}
+
+/* Formulário de Cadastro de Currículo */
+.curriculum-form {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.curriculum-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.curriculum-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Garantir que os campos fiquem um abaixo do outro */
+.curriculum-form input[type="text"],
+.curriculum-form input[type="email"],
+.curriculum-form input[type="number"],
+.curriculum-form input[type="tel"],
+.curriculum-form select,
+.curriculum-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;  /* Espaçamento entre os campos */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: block;  /* Garantindo que fiquem um abaixo do outro */
+    clear: both;  /* Evita que os campos fiquem lado a lado */
+}
+
+/* Botão de envio */
+.curriculum-form button {
+    width: 100%;
+    background-color: #3a8fcc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.curriculum-form button:hover {
+    background-color: #327bb2;
+}
+
+/* Estilo para os Botões de Navegação no Cabeçalho */
+.botao {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #00a5b8;
+    color: rgb(255, 255, 255);
+}
+
+.botao:hover {
+    background-color: #007f91;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .botao {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .curriculum-form {
+        width: 90%;
+    }
+}

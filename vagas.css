@@ -1,0 +1,280 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo da seção da mensagem de parceria */
+.partnership-message {
+    background-color: #f4f7fb; /* Fundo suave para destacar a mensagem */
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animação de aparecimento */
+}
+
+/* Estilo do texto da mensagem */
+.partnership-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    color: #2d3a58; /* Cor do texto para contraste */
+    line-height: 1.6;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Animação para o texto */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para destacar emojis e palavras chave */
+.partnership-text span {
+    font-size: 1.6rem;
+    color: #ff6b81; /* Cor vibrante para destacar emojis */
+    font-weight: bold;
+}
+
+/* Estilo para o ícone de 💼🌟 */
+.partnership-text .emoji {
+    font-size: 1.8rem;
+    color: #ffb400;
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    animation: bounce 1.5s infinite alternate; /* Animação para emojis */
+}
+
+/* Animação de "bounce" nos emojis */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Adicionando um efeito de hover ao fundo */
+.partnership-message:hover {
+    background-color: #e8f4fd;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Cor de fundo principal */
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #2c3e50; /* Cor do cabeçalho */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+header img {
+    max-height: 50px;
+}
+header .logo h1 {
+    max-height: 50px;
+}
+
+header .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #00a5b8;
+    color: rgb(255, 255, 255);
+}
+
+#logout-btn {
+    background-color: #f3bfb9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #f0bfb9;
+}
+
+/* Estilo da lista de vagas */
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.job-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.job-item:hover {
+    transform: translateY(-5px);
+}
+
+.job-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.job-item .verificado {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.job-item .location {
+    font-size: 14px;
+    color: #007B7F;
+    margin-bottom: 10px;
+}
+
+.job-item .apply-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.job-item .apply-btn:hover {
+    background-color: #e55347;
+    transform: translateY(-3px);
+}
+
+.job-item .apply-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 99, 71, 0.6);
+}
+
+/* Estilo para a seção de filtros */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.filters .filter {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters .filter h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filters .filter select,
+.filters .filter input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.filters .filter button {
+    background-color: #00a5b8;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.filters .filter button:hover {
+    background-color: #007d8a;
+}
+
+/* Estilo para a seção de empresas e vagas */
+.job-item .company {
+    font-size: 14px;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .job-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters .filter {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+}

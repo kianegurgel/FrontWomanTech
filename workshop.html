@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop - Woman Tech</title>
+    <link rel="stylesheet" href="workshop.css"> 
+</head>
+<body>
+    
+    <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+        <div>  
+            <img src="imagens/logomenor.png" alt="Imagem Exemplo" id="mover-image">
+        </div>
+        <div class="header-content">
+            <div class="buttons">              
+                <button class="botao 2" onclick="window.location.href='workshop.html'">Workshop</button>
+                <button class="botao 4" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                <button class="botao 4" onclick="window.location.href='vagas.html'">Vagas</button>
+                <button class="botao 4" onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                <button class="botao 4" onclick="window.location.href='curriculo.html'">Curriculo</button>
+                <button class="botao 1" onclick="window.location.href='pagina1.html'">Sobre</button>
+            </div>
+        </div>
+        <div class="user-info">
+            <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+            <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+        </div>
+    </header>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Seção de cabeçalho com imagem e título -->
+            <section class="header-section">
+                <img src="imagens/workshop-img.jpeg" alt="Workshop Background" class="header-image">
+                <h1>Workshop</h1>
+            </section>
+
+            <!-- Lista de Workshops -->
+            <section class="workshops">
+                <article class="workshop-item">
+                    <img src="imagens/power-bi.jpeg" alt="Power BI" class="course-icon">
+                    <div class="course-info">
+                        <h2>Power BI</h2>
+                        <p>O Power BI é uma ferramenta da Microsoft que serve para transformar dados não relacionados em informações interativas, visualmente envolventes e coerentes.</p>
+                        <button class="inscricao" onclick="toggleFormulario(this)">Inscreva-se</button>
+                        <div class="formulario-inscricao">
+                            <label>Nome:</label>
+                            <input type="text" placeholder="Digite seu nome">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Digite seu email">
+                            <button onclick="enviarInscricao()">Enviar</button>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <article class="workshop-item">
+                    <img src="imagens/analise-img.jpeg" alt="Análise de dados com IA" class="course-icon">
+                    <div class="course-info">
+                        <h2>Análise de dados com IA</h2>
+                        <p>Análise de dados com IA - projetada para apoiar, automatizar e simplificar cada etapa da jornada de análise de dados.</p>
+                        <button class="inscricao" onclick="toggleFormulario(this)">Inscreva-se</button>
+                        <div class="formulario-inscricao">
+                            <label>Nome:</label>
+                            <input type="text" placeholder="Digite seu nome">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Digite seu email">
+                            <button onclick="enviarInscricao()">Enviar</button>
+                        </div>
+                       
+                    </div>
+                </article>
+
+                <article class="workshop-item">
+                    <img src="imagens/nuvem-img.jpeg" alt="Computação em Nuvem" class="course-icon">
+                    <div class="course-info">
+                        <h2>Computação em nuvem</h2>
+                        <p>Computação em nuvem - ajudar com o entendimento da ferramenta que permite o acesso remoto a recursos computacionais, como armazenamento, servidores, bancos de dados...</p>
+                        <button class="inscricao" onclick="toggleFormulario(this)">Inscreva-se</button>
+                        <div class="formulario-inscricao">
+                            <label>Nome:</label>
+                            <input type="text" placeholder="Digite seu nome">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Digite seu email">
+                            <button onclick="enviarInscricao()">Enviar</button>
+                        </div>
+                        
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Função para mostrar ou ocultar o formulário de inscrição ao lado do botão "Inscreva-se"
+        function toggleFormulario(button) {
+            const formulario = button.nextElementSibling;
+            const todosFormularios = document.querySelectorAll(".formulario-inscricao");
+
+            // Fecha todos os outros formulários abertos
+            todosFormularios.forEach(form => {
+                if (form !== formulario) {
+                    form.style.display = "none";
+                }
+            });
+
+            // Alterna a visibilidade do formulário selecionado
+            formulario.style.display = formulario.style.display === "block" ? "none" : "block";
+        }
+
+        // Função para enviar os dados do formulário de inscrição
+        function enviarInscricao() {
+            alert("Inscrição enviada com sucesso!");
+        }
+
+        // Fecha o formulário se clicar fora dele
+        window.onclick = function(event) {
+            const todosFormularios = document.querySelectorAll(".formulario-inscricao");
+            todosFormularios.forEach(formulario => {
+                if (!formulario.contains(event.target) && event.target.className !== "inscricao") {
+                    formulario.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

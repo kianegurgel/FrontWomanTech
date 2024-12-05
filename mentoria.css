@@ -1,0 +1,148 @@
+/* Estilos Globais */
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #00a5b8;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header div img{
+    width: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+
+.botao {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #00a5b8;
+    color: rgb(255, 255, 255);
+}
+
+#mover-image {
+    width: 280px;
+    height: auto;
+    position: relative;
+    top: -10px;
+    
+    
+}
+
+#movable-text {
+    font-size: 24px;
+    position: absolute;
+    top: 40px;
+    right: 1350px;
+    
+}
+
+
+/* Estilos do chat */
+/*
+.chat-container {
+    margin-top: 100px; /* Espaço para o cabeçalho fixo */
+    /*
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e0f7fa;
+    text-align: left;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    text-align: right;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a8fcc;
+    color: white;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #337ab7;
+}
+
+/* Responsividade */
+/*
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-section h1 {
+        font-size: 36px;
+    }
+
+    .botao {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}

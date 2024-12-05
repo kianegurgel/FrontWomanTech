@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Currículo - WomanTech</title>
+    <link rel="stylesheet" href="feedbacks.css"> <!-- Manter o CSS ou criar um novo -->
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div>  
+            <img src="imagens/logomenor.png" alt="Imagem Exemplo" id="mover-image">
+        </div>
+        <div class="header-content">
+            <div class="buttons">              
+                <button class="botao 2" onclick="window.location.href='workshop.html'">Workshop</button>
+                <button class="botao 4" onclick="window.location.href='cursos.html'">Cursos e Especializações</button>
+                <button class="botao 4" onclick="window.location.href='vagas.html'">Vagas</button>
+                <button class="botao 4 " onclick="window.location.href='feedbacks.html'">Atualizar Curriculo</button>
+                <button class="botao 4 " onclick="window.location.href='curriculo.html'">Curriculo</button>
+                <button class="botao 1" onclick="window.location.href='pagina1.html'">Sobre</button>
+            </div>
+
+        </div>
+        <div class="user-info">
+            <span id="user-greeting">Olá, <span id="user-name">Usuário</span></span>
+            <button id="logout-btn"  onclick="window.location.href='login.html'">Sair</button>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro de Currículo -->
+    <main>
+        <section class="curriculum-form">
+            <h2>Cadastro de Currículo</h2>
+            <form id="curriculumForm">
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required placeholder="Digite sua idade">
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="area">Área de Atuação:</label>
+                <input type="text" id="area" name="area" required placeholder="Ex: Desenvolvimento de Software">
+
+                <label for="formacao">Formação Acadêmica:</label>
+                <input type="text" id="formacao" name="formacao" required placeholder="Ex: Bacharelado em Ciência da Computação">
+
+                <label for="trabalhoAtual">Trabalho Atual:</label>
+                <input type="text" id="trabalhoAtual" name="trabalhoAtual" placeholder="Ex: Desenvolvedor de Software">
+
+                <label for="pretensaoSalarial">Pretensão Salarial (R$):</label>
+                <input type="number" id="pretensaoSalarial" name="pretensaoSalarial" required placeholder="Digite sua pretensão salarial">
+
+                <button type="submit">Cadastrar Currículo</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="feedbacks.js"></script> <!-- Pode ajustar ou criar um novo arquivo JS para salvar as informações -->
+</body>
+</html>
