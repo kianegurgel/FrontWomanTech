@@ -29,7 +29,8 @@ async function carregarCurriculo() {
     } catch (error) {
         console.error('Erro ao carregar o currículo:', error);
         // Exibir mensagem de erro se o currículo não for encontrado
-        alert('Currículo não encontrado.');
+        alert('Currículo não encontrado, favor fazer login.');
+        window.location.href = "login.html";
     }
 }
 window.onload = carregarCurriculo;
